@@ -27,8 +27,9 @@ export default defineConfig({
     worker: true,
   },
   ignorePatterns: [
+    ".react-router/",
     "coverage/",
-    "dist/",
+    "build/",
     "playwright-report/",
     "storybook-static/",
     "test-results/",
@@ -114,6 +115,7 @@ export default defineConfig({
       "warn",
       {
         case: "camelCase",
+        ignore: "react-router.config.ts",
       },
     ],
     "vitest/consistent-vitest-vi": "warn",

@@ -1,5 +1,6 @@
 # Dist Folder
-dist
+.react-router
+build
 
 # Public Folder
 public

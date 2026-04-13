@@ -22,6 +22,8 @@ test("should not have any automatically detectable accessibility issues", async 
 }) => {
   await page.goto("/");
 
+  await page.waitForSelector("main");
+
   const accessibilityScanResults = await new AxeBuilder({ page }).analyze();
 
   expect(accessibilityScanResults.violations).toEqual([]);
