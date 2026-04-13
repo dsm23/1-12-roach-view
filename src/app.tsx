@@ -1,6 +1,7 @@
-import { buttonVariants } from "~/components/button";
+import Footer from "~/components/footer";
 import { ThemeProvider } from "~/components/theme-provider";
 import { ThemeSwitcher } from "~/components/theme-switcher";
+import { buttonVariants } from "~/components/ui/button";
 
 const LP_GRID_ITEMS = [
   {
@@ -490,9 +491,10 @@ const App = () => (
         </div>
       </section>
     </main>
-    <footer className="mx-auto flex w-full items-center justify-center border-t py-16 text-center text-xs">
+    <div className="mx-auto flex w-full items-center justify-center border-t py-16 text-center text-xs">
       <ThemeSwitcher />
-    </footer>
+    </div>
+    <Footer />
   </ThemeProvider>
 );
 
