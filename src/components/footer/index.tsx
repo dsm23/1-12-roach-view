@@ -1,4 +1,5 @@
 import type { FunctionComponent } from "react";
+import { Link } from "react-router";
 
 const Footer: FunctionComponent = () => (
   <footer className="w-full bg-slate-100 px-8 py-12 dark:bg-slate-900">
@@ -14,30 +15,24 @@ const Footer: FunctionComponent = () => (
         </p>
       </div>
       <div className="flex flex-wrap items-center gap-x-8 gap-y-4 md:justify-end">
-        <a
+        <Link
           className="text-xs font-medium text-slate-600 hover:text-slate-900 dark:text-slate-500 dark:hover:text-white"
-          href="#"
+          to="/privacy-policy"
         >
           Privacy Policy (upcoming)
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-xs font-medium text-slate-600 hover:text-slate-900 dark:text-slate-500 dark:hover:text-white"
-          href="#"
-        >
-          Terms of Service (upcoming)
-        </a>
-        <a
-          className="text-xs font-medium text-slate-600 hover:text-slate-900 dark:text-slate-500 dark:hover:text-white"
-          href="#"
+          to="/accessibility"
         >
           Accessibility (upcoming)
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-xs font-medium text-slate-600 hover:text-slate-900 dark:text-slate-500 dark:hover:text-white"
-          href="#"
+          to="/cookie-settings"
         >
           Cookie Settings (upcoming)
-        </a>
+        </Link>
       </div>
     </div>
   </footer>
