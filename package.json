@@ -46,7 +46,7 @@
     "@react-router/dev": "7.18.2",
     "@storybook/addon-docs": "10.5.5",
     "@storybook/addon-links": "10.5.5",
-    "@storybook/addon-vitest": "10.5.5",
+    "@storybook/addon-vitest": "10.6.2",
     "@storybook/react-vite": "10.5.5",
     "@tailwindcss/vite": "4.3.3",
     "@testing-library/jest-dom": "6.9.1",
